@@ -9,7 +9,7 @@ $(call inherit-product, vendor/meizu/m1926/m1926-vendor.mk)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-mokee
+    $(LOCAL_PATH)/overlay-lineage
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2232
@@ -17,7 +17,7 @@ TARGET_SCREEN_WIDTH := 1080
 
 # Permissions
 PRODUCT_COPY_FILES += \
-    vendor/mokee/config/permissions/vendor.mokee.biometrics.fingerprint.inscreen.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/vendor.mokee.biometrics.fingerprint.inscreen.xml
+    vendor/lineage/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
 
 # Fingerprint
 PRODUCT_PACKAGES += \
